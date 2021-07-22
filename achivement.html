@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;background-color:black;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+.top-left {
+  position: absolute;
+  top:-25px;
+  left: 16px;
+  font-size:17px;
+}
+  .topnav a{
+    float: none;
+    width: 100%;
+  }
+
+ .active {
+  background-color: green;
+  color: white;
+}
+
+.dropdown-content a {
+  float: right;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+a:hover {
+  color: black;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+ 
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  left:285px;
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  margin-top:5%;
+  width: 50%;
+}
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.left {
+  left: 0;
+}
+.right {
+  left: 50%;
+}
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+.right::after {
+  left: -16px;
+}
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+@media screen and (max-width: 600px) {
+  .timeline::after {
+  left: 31px;
+  }
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+  .left::after, .right::after {
+  left: 15px;
+  }
+  .right {
+  left: 0%;
+  }
+
+</style>
+</head>
+<body>
+<nav class="w3-sidebar w3-red w3-collapse w3-top  w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Online Recuirement<br>System</b></h3>
+  </div>
+  <div class="w3-bar-block" >
+    <a href="cand_index.html" class="w3-bar-item w3-button w3-hover-white">Home</a>
+    <a href="achivement.html" class="w3-button w3-hover-white" style="top:-5px;background-color:white;color:black ;width:100%;">Achivements</a>
+     <a style="width:100%;text-decoration:none;" href="intern_reg.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRegister</a><br>
+    <button class="w3-bar-item w3-button w3-hover-white">Internship
+    <i class="fa fa-caret-down"></i>
+  </button>
+    <a style="width:100%;text-decoration:none;" href="intern_index.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspHome</a><br>
+    <a style="width:100%;text-decoration:none;" href="intern_log.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTake test</a><br>
+    <button class="w3-bar-item w3-button w3-hover-white">Job Requirement
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <a style="width:100%;text-decoration:none;" href="intern_index.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspHome</a><br>
+    <a style="width:100%;text-decoration:none;" href="intern_log.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTake test</a><br>
+  </div>
+</nav>
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>Hyperlink InfoSystem</h2>
+      <p>In 2011 -  We have sorted 10 members for Intership and 6 member for job for the company</p>
+      <p> In 2017 - We have sorted 5 members for Intership and 8 member for job for the company </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>Tata Consultancy Services.</h2>
+      <p>In 2012 -  We have sorted 5 members for Intership and 6 member for job for the company</p>
+      <p> In 2015 - We have sorted 12 members for Intership and 8 member for job for the company </p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>HCL Technologies</h2>
+      <p>In 2013 -  We have sorted 10 members for Intership and 6 member for job for the company</p>
+      <p> In 2018 - We have sorted 5 members for Intership and 8 member for job for the company </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>Tech Mahindra</h2>
+     <p>In 2016 -  We have sorted 8 members for Intership and 10 member for job for the company</p>
+      <p> In 2012 - We have sorted 3 members for Intership and 15 member for job for the company </p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>Wipro</h2>
+        <p>In 2011 -  We have sorted 6 members for Intership and 3 member for job for the company</p>
+      <p> In 2015 - We have sorted 9 members for Intership and 13 member for job for the company </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>Infosys</h2>
+       <p>In 2014 -  We have sorted 10 members for Intership and 6 member for job for the company</p>
+      <p> In 2019 - We have sorted 5 members for Intership and 8 member for job for the company </p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+	
+	
+	

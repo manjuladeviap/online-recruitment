@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+table{
+box-sizing: border-box;
+border-collapse: collapse;
+border: 1.5px solid black; 
+border-space:30px;
+width:500px;
+margin-bottom:50px;
+margin-left:20px;
+}
+tr,td{
+padding:10px;
+margin-left:15px;
+}
+</style>
+</head>
+<body>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Online Recuirement<br>System</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="comp_det.jsp" class="w3-bar-item w3-button w3-hover-white" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Company Details</a> 
+    <a href="cand_det.jsp" class="w3-bar-item w3-button w3-hover-white">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Candidate Details</a> 
+    <a href="scoresheet.jsp" class="w3-bar-item w3-button w3-hover-white">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Score sheet</a> 
+    <a href="job_rec.html" class="w3-bar-item w3-button w3-hover-white" style="background-color:white;color:black ;width:100%";>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Job Record</a> 
+    <a href="intern_rec.html" class="w3-bar-item w3-button w3-hover-white">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Intern Record</a>
+    <a href="job_rec.html" class="w3-bar-item w3-button w3-hover-white" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Recruited Record</a> 
+    <a href="index.html" class="w3-bar-item w3-button w3-hover-white">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Log Out</a> 
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:50px" id="showcase">
+    <h1 class="w3-jumbo"><b style="font-size:35px">Job Records</b></h1>
+  </div>
+ <div class="container">
+  <div class="top-left"><br><p  style="text-align:left">
+  <form action="job_rec.jsp">
+  <label>From Date : </label>
+  <input type="date" placeholder="DD-MM-YYYY" name="from"/><br><br>
+  <label>To Date : </label>
+  <input type="date" placeholder="DD-MM-YYYY" name="to"/><br><br>
+  <button type="submit">Submit</button>
+  </form>
+  </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Booking</title>
+<style type="text/css">
+body{
+background-image: linear-gradient(180deg, #c3cfe2, #f5f7fa);
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Times new roman", "Courier New", monospace;  
+}
+.head{
+padding:30px;
+background-color: #2b2b2b;
+text-align: center;
+color: white;
+font-size: 24px;
+top:0;
+left:0;
+right:0;
+}
+table{
+background-color:white;
+opacity:0.85;
+height: 70px;
+width: 45%;
+font-size: 18px;
+border-spacing: 30px;
+box-sizing: border-box;
+border-collapse: collapse;
+border: 1.5px solid black; 
+padding:5px;
+margin-bottom:50px;
+}
+input[type=text],input[type=number],input[type=button],input[type=reset],select,textarea{
+width:70%;
+padding:7px;
+border-radius:4px;
+border-collapse:collapse;
+border:1px solid black;
+}
+tr,td,thead
+{
+padding: 15px 20px;
+}
+button
+{
+padding: 10px 100px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+<script type="text/javascript">
+function val() 
+ {
+   var x = document.forms["myForm"]["cname"].value;
+   var m=document.forms["myForm"]["phnum"].value;
+   m1=m.length;
+   var a=document.forms["myForm"]["mailid"].value;
+   var b=document.forms["myForm"]["num"].value;
+   var y=document.forms["myForm"]["req"].value;
+   var add=document.forms["myForm"]["text"].value;
+   if (x == "")
+    {
+      alert("Company name must be filled out");
+      return false;
+    }
+    if(m1>10 || m1<10)
+     {
+       alert("please enter office number");
+       return false;
+     }
+    if(a=="")
+    {
+       alert("Enter companies mail id");
+       return false;
+     }
+   if(b=="")
+   {
+     alert(" Enter no of member needed");
+     return false;}
+   if(y=="")
+  {
+     alert("Enter the requiements");
+     return false;}
+  if(add=="")
+  {
+     alert("Enter company address");
+     return false;}
+  else
+	{
+       return true;
+	}
+}
+</script>
+</head>
+<body>
+<div class="head">Company Details</div>
+<div class="topnav">
+  <a class="active" href="com_reg.html">Register</a>
+  <a href="need.html">Need members</a>
+  <a href="index.html">Log out</a>
+</div>
+<center><br><br><table>
+<form name="myForm" action="Comp" method="post">
+<tr>
+<td> 
+Company Name
+</td>
+<td>
+:
+</td>
+<td>
+<input type="text" name="cname" size="35">
+</td>
+</tr>
+<tr>
+<td> 
+Your name
+</td>
+<td>
+:
+</td>
+<td>
+<input type="text" name="coname" size="35">
+</td>
+</tr>
+<tr>
+<td>
+Contact number
+</td>
+<td>
+:
+</td>
+<td>
+<input type="number" name="phnum" size="35">
+</td>
+</tr>
+<tr>
+<td>
+Company mail id
+</td>
+<td>
+:
+</td>
+<td>
+<input type="text" name="mailid" size="35">
+</td>
+</tr> 
+<tr>
+<td>
+Address
+</td>
+<td>
+:
+</td>
+<td>
+<textarea cols="27" rows="5" name="text"></textarea>
+</td>
+</tr>
+<tr>
+<td>
+<input type="reset" value="Cancel"/>
+</td>
+<td></td>
+<td>
+<button type="submit" name="submit" onclick="return val()">Register</button>
+</td>
+</tr>
+</center></form>
+</body>
+</html>
